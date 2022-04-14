@@ -1,0 +1,112 @@
+.btn{
+    display: inline-block;
+    padding: rem(16px) rem(35px);
+    border: none;
+    border-radius:$control-radius;
+    @include font(700,1,'nr','base');
+    background-color: color('button-bg');
+    color: color('button-fg');
+    cursor: pointer;
+
+    &[disabled]{
+        background-color: color('button-bg');
+        color: color('button-fg');
+    }
+
+    &-circle{
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 50%;
+        width: rem(36px);
+        height: rem(36px);
+        line-height: rem(36px);
+        text-align: center;
+        border:none;
+        cursor: pointer;
+
+        svg{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    &-default{
+        
+    }
+
+    &-block{
+        display: block;
+        width: 100%;
+    }
+
+    &-primary{
+        background-color: color('primary-bg');
+        color: color('primary-fg');
+    }
+
+}
+// Multi select
+.css-b62m3t-container{
+    min-height: rem(44px);
+
+    .css-qc6sy-singleValue {
+        padding-top: rem(4px);
+    }
+
+    .css-1rhbuit-multiValue {
+        height: rem(30px);
+        border-radius: rem(35px);
+        padding: rem(5px) rem(25px) rem(5px) rem(10px);
+        background-color: color('primary-bg');
+        @include font(400,#{rem(18px)},'nr','base');
+        display: inline-grid;
+        white-space: nowrap;
+        justify-content: center;
+        align-items: baseline;
+        position: relative;
+        .css-xb97g8 {
+            position: absolute;
+            right: rem(5px);
+            top: 50%;
+            transform: translateY(-50%);
+            line-height: rem(10px);
+            &:hover{
+                background-color: transparent;
+                color: #000;
+            }
+        }
+        >*{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    .css-1pahdxg-control{
+        border-color: color('primary-bg');
+        box-shadow: 0 0 0 rem(1px) color('primary-bg');
+        border-radius: $control-radius;
+       &:hover{
+           border-color: color('primary-bg');
+       } 
+    }
+    
+    .css-1s2u09g-control{
+        border-radius: $control-radius;
+    }
+    .css-14el2xx-placeholder{
+        padding-top: rem(4px);
+        @include font(normal,1,'nr','base');
+    }
+    .css-1okebmr-indicatorSeparator{
+        background-color: transparent;
+    }
+
+    // .css-yt9ioa-option{background-color:transparent;color:inherit;cursor:default;display:block;font-size:inherit;padding:8px 12px;width:100%;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);box-sizing:border-box;}
+    .css-1n7v3ny-option:active{
+        background-color:color('primary');
+    }
+    .css-yt9ioa-option:active{background-color:color('primary');}
+    .css-1n7v3ny-option{
+        background-color: color('primary');//#DEEBFF;
+    }
+}

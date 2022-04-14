@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    @include font(normal,1,'nr','base');
+}
+
+.ecllipse{
+    position: absolute;
+    width: rem(623px);
+    height: rem(417px);
+    background: color('primary-bg');
+    border-radius: 50%;
+    z-index: -1;
+
+    &-top-right{
+        left: rem(462px);
+        top: rem(595px);    
+    }
+
+    &-bottom-center{
+        left: rem(989px);
+        top: rem(-262px);
+    }
+    
+}
+
+.h1 {
+    @include font(700,1,'xl','heading');
+}
+.text-center{
+    text-align: center !important;
+}
+.form-group{
+    margin-bottom: rem(30px);
+}

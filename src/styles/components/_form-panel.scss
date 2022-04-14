@@ -1,0 +1,15 @@
+.form-panel{
+    border-radius: $widget-radius;
+    box-shadow: $box-shadow;
+    padding: rem(30px);
+    background-color: color('widget');
+    border: rem(1px) solid color('border');
+    width: rem(494px);
+    height: rem(600px);
+    position: relative;
+    z-index: 5;
+
+    &-wrap{
+        padding: rem(50px);
+    }
+}
